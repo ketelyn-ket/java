@@ -17,13 +17,18 @@ var alturaEhValido = true;
 if(peso < 0 || peso > 100){
     console.log("Peso invalido");
     pesoEhValido = false;
+    tdImc.textContent = "Peso invalido";
 }
 
 if(altura < 0 || altura > 3.00){
     console.log("Altura invalido");
-    alturaEhValido = false;
+    alturaEhValida = false;
+    tdImc.textContent = "Altura invalida";
 }
 
-var imc = peso / (altura * altura);
+if(alturaEhValida && pesoEhValido){
+    var imc = peso / (altura * altura);
 
-tdImc.textContent = imc;
+    tdImc.textContent = imc;
+}
+
