@@ -1,7 +1,7 @@
 //var titulo = document.querySelector("titulo");
 //titulo.textContent = "Aparecida Nuticionista";
 
-var paciente = document.querySelector("#primeiro-paciente");
+var paciente = document.querySelectorAll(".paciente");
 
 var tdPeso = paciente.querySelector(".info-Peso");
 var Peso = tdPeso.textContent;
@@ -31,4 +31,3 @@ if(alturaEhValida && pesoEhValido){
 
     tdImc.textContent = imc;
 }
-
